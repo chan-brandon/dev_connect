@@ -4,7 +4,6 @@ source 'http://gems.github.com'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0'
 # Use Puma as the app server
-gem 'puma', '3.4.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.6'
 # Use Uglifier as compressor for JavaScript assets
@@ -37,11 +36,13 @@ gem 'font-awesome-sass', '4.6.2'
 # Use Hirb for better database table display in consol
 gem 'hirb', '0.7.3'
 
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'puma', '3.4.0'
 end
 
 group :development do
@@ -56,6 +57,7 @@ end
 group :production do
   # Use the PostgresSQL gem for Heroku production servers
   gem 'pg'
+  gem 'puma'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

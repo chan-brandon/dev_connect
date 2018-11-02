@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: http://gems.github.com/
   specs:
     actioncable (5.0.0)
       actionpack (= 5.0.0)
@@ -191,4 +192,4 @@ RUBY VERSION
    ruby 2.4.5p335
 
 BUNDLED WITH
-   1.16.2
+   1.17.1
